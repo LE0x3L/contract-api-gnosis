@@ -26,11 +26,6 @@ function newSafe(userWallet, payeerKey) {
         const txServiceUrl = 'https://safe-transaction.goerli.gnosis.io';
         const safeService = new safe_service_client_1.default({ txServiceUrl, ethAdapter });
         const safeFactory = yield safe_core_sdk_1.SafeFactory.create({ ethAdapter });
-        // const owners = [
-        //     '0xfc0A071784b75517e8cc8701Ea437BD192Bc5082',
-        //     '0xD84D74aF87Ef7aaE715B7193dA6AfAED28448B79',
-        //     '0xdf6c9dDc35A87C05Acd604326D9E3D0FbA6DD7C4'
-        // ]
         const owners = [
             userWallet
         ];
@@ -46,4 +41,3 @@ function newSafe(userWallet, payeerKey) {
     });
 }
 exports.newSafe = newSafe;
-// newSafe();
