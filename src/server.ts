@@ -13,11 +13,11 @@ app.post('/safe', async (req, res) => {
         console.log(req?.body);
         const result = await newSafe( req?.body?.userWallet, req?.body?.payeerKey );
         console.log(result);
-    } catch (e) 
+        res.send( `{ "newSafeAddress": "${result}" }` ).status(200).end();
+    } catch (e)
     {
         console.error(e);
     }
-    res.send('{}').status(200).end();
 })
 
 app.get('/', (req, res) => {
