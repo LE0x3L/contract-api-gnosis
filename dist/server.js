@@ -14,7 +14,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 const express_1 = __importDefault(require("express"));
 const newSafe_1 = require("./newSafe");
-const PORT = 7890;
+const PORT = process.env.PORT || 7890;
 const app = (0, express_1.default)();
 app.use(express_1.default.json());
 app.post('/safe', (req, res) => __awaiter(void 0, void 0, void 0, function* () {

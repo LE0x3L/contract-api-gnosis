@@ -1,7 +1,7 @@
 import express from 'express';
 import {newSafe} from './newSafe';
 
-const PORT = 7890;
+const PORT = process.env.PORT || 7890
 
 const app = express();
 app.use(express.json());
