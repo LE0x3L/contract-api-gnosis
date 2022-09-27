@@ -2,7 +2,8 @@
 
 A simple Api test for [safe-core-sdk](https://github.com/safe-global/safe-core-sdk)
 
-* Install: `yarn install`
+* install: `yarn install`
+* build: `npx tsc`
 * run ts: `npx ts-node src/server.ts`
 * run js: `npx node dist/server.js`
 * test: 

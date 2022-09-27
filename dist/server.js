@@ -25,7 +25,7 @@ app.post('/safe', (req, res) => __awaiter(void 0, void 0, void 0, function* () {
         console.log(req === null || req === void 0 ? void 0 : req.body);
         const result = yield (0, newSafe_1.newSafe)((_a = req === null || req === void 0 ? void 0 : req.body) === null || _a === void 0 ? void 0 : _a.userWallet, (_b = req === null || req === void 0 ? void 0 : req.body) === null || _b === void 0 ? void 0 : _b.payeerKey);
         console.log(result);
-        res.send(`{"newSafeAddress": "${result}" }`).status(200).end();
+        res.send(`{ "newSafeAddress": "${result}" }`).status(200).end();
     }
     catch (e) {
         console.error(e);
