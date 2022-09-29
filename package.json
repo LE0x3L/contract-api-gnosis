@@ -4,9 +4,8 @@
   "main": "dist/server.js",
   "license": "MIT",
   "scripts": {
-    "start": "node dist/server.js",
-    "build": "npx tsc",
-    "generatejs": "npx browserify dist/gnosis-api.js --s gnosis > dist/safe-api.js"
+    "build": "npx tsc && npx browserify dist/gnosis-api.js --s gnosis > dist/safe-api.js",
+    "start": "node dist/server.js"
   },
   "engines": {
     "node": "18.x"
