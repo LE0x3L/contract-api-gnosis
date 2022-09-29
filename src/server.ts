@@ -1,5 +1,5 @@
 import express from 'express';
-import {newSafe} from './newSafe';
+import {newSafe} from './gnosis-api';
 
 const PORT = process.env.PORT || 7890
 
